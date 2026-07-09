@@ -3,7 +3,7 @@
 
 *An architectural overview and feature showcase of a proprietary POS system built for the F&B industry.*
 
-> **Note:** This is a showcase repository. The source code for this commercial project is kept private to protect client intellectual property. Selected code snippets demonstrating architecture and UI design are linked below via GitHub Gists.
+> **Note:** This is a showcase repository. The source code for this commercial project is kept private to protect client intellectual property.
 
 ## 📌 Project Overview
 POS NOW PRO is a fully functional, commercial-grade Point of Sale system designed to streamline restaurant operations. It features a tablet-optimized frontend application for staff and a comprehensive administrative backend for management. The system handles everything from multi-lingual menu ordering and hardware integration (thermal printers) to real-time revenue tracking.
@@ -56,11 +56,18 @@ The administrative backend empowers business owners to manage their operations s
 ---
 
 ## 💻 Code Architecture Showcase
-While the full repository is private, you can review my architectural approach and clean code practices through the selected snippets below:
+To demonstrate my coding standards and architectural approach, I have extracted and sanitized key components from the system. You can review the selected source code directly in this repository:
 
-* [**Frontend: Neumorphic UI Components (Dart)**](#) *(Link your GitHub Gist here)*
-* [**Frontend: GetX State Management Implementation (Dart)**](#) *(Link your GitHub Gist here)*
-* [**Backend: Filament Resource Configuration (PHP)**](#) *(Link your GitHub Gist here)*
+### Frontend (Flutter / GetX)
+* [**State Management Controller**](./code-showcase/Frontend/lib/app/modules/order/order_controller.dart) - Shows how GetX is used for reactive state and dependency injection.
+* [**Thermal Printer Integration Service**](./code-showcase/Frontend/lib/app/services/printer_service.dart) - Demonstrates local network hardware communication, IP/MAC targeting, Bluetooth and connection timeout error handling.
+* [**Real-Time WebSocket Service**](./code-showcase/Frontend/lib/app/services/web_socket_service.dart) - Demonstrates live, bi-directional communication for instant order dispatch and kitchen display updates.
+* [**Fallback Polling Service**](./code-showcase/Frontend/lib/app/services/polling_services.dart) - Highlights fault-tolerance by maintaining critical data synchronization if the local network drops the WebSocket connection.
+
+### Backend (Laravel / Filament)
+* [**Filament Menu Resource**](./code-showcase/Backend/app/Http/Controllers/OrderController.php) - Illustrates complex CRUD operations and role-based access control setup.
+* [**Event Broadcasting Setup**](./code-showcase/Backend/app/Events/TableUpdated.php) - Details the real-time websocket implementation for Table display updates.
+* [**Filament Menu Item Resource**](./code-showcase/Backend/app/Filament/Resources/MenuItemResource.php) - Demonstrates advanced CRUD operations, custom form component configuration, bilingual data handling, and administrative UI table structuring.
 
 ---
 
@@ -68,5 +75,5 @@ While the full repository is private, you can review my architectural approach a
 Designed and developed by **CHAI PEI LING**. 
 If you are interested in discussing this architecture, mobile development, or potential software engineering opportunities, please feel free to reach out.
 
-* **LinkedIn:** linkedin.com/in/chai-pei-ling-1a8b35261
+* **LinkedIn:** [Chai Pei Ling](https://linkedin.com/in/chai-pei-ling-1a8b35261)
 * **Portfolio:** [Your Portfolio URL]
