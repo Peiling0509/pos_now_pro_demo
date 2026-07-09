@@ -22,8 +22,8 @@ POS NOW PRO is a fully functional, commercial-grade Point of Sale system designe
 ### 1. Modern Neumorphic Staff Interface (Flutter)
 The frontend utilizes a custom-built Neumorphic design language to provide a tactile, modern, and highly intuitive experience for restaurant staff.
 * Secure PIN-based login for staff authentication.
-<img width="2800" height="1840" alt="1783504626504" src="https://github.com/user-attachments/assets/54387f7b-d6d1-4f37-8239-2e5801259cc8" />
 * Multi-lingual support built-in (English, 中文, Bahasa Melayu).
+<img width="2800" height="1840" alt="1783504626504" src="https://github.com/user-attachments/assets/54387f7b-d6d1-4f37-8239-2e5801259cc8" />
 <img width="2800" height="1840" alt="1783504712492" src="https://github.com/user-attachments/assets/c81741b4-3287-4ed6-9998-0ee42f8467f5" />
 
 
@@ -68,5 +68,5 @@ While the full repository is private, you can review my architectural approach a
 Designed and developed by **CHAI PEI LING**. 
 If you are interested in discussing this architecture, mobile development, or potential software engineering opportunities, please feel free to reach out.
 
-* **LinkedIn:** [Your LinkedIn URL]
+* **LinkedIn:** linkedin.com/in/chai-pei-ling-1a8b35261
 * **Portfolio:** [Your Portfolio URL]
